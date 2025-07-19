@@ -3,7 +3,7 @@ import React from "react";
 const AboutUs = () => {
   return (
     <>
-      <div className="bg-white text-center p-5 flex justify-center items-center flex-col">
+      <div className="bg-gray-200 text-center p-5 flex justify-center items-center flex-col">
         <div className="p-5">
           <h2 className="font-bold text-2xl underline">About Us</h2>
           <p>TapCard is your all-in-one digital identity solution.</p>

@@ -1,10 +1,16 @@
-import React from 'react'
-import AboutUs from './Components/AboutUs'
+import React from "react";
+import AboutUs from "./Components/AboutUs";
+import WhyChooseUs from "./Components/WhyUs";
+import WhereToUse from "./Components/WhereToUse";
 
 const App = () => {
   return (
-    <AboutUs/>
-  )
-}
+    <>
+      <AboutUs />
+      <WhyChooseUs />
+      <WhereToUse />
+    </>
+  );
+};
 
-export default App
+export default App;
