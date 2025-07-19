@@ -1,8 +1,9 @@
 import React from 'react'
+import AboutUs from './Components/AboutUs'
 
 const App = () => {
   return (
-    <div>Tapcard</div>
+    <AboutUs/>
   )
 }
 
