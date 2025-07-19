@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
+import HowToUse from "../Components/HowToUse";
 
 const HowItWorks = () => {
   return (
-    <div>HowItWorks</div>
-  )
-}
+    <>
+      <div className="">
+        <Navbar />
+        <HowToUse/>
+        <Footer />
+      </div>
+    </>
+  );
+};
 
-export default HowItWorks
+export default HowItWorks;
