@@ -10,7 +10,7 @@ const Navbar = () => {
       <nav className="bg-[#000000] text-white py-6 px-6 md:px-[100px] flex justify-between items-center relative z-50">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <span className="text-3xl font-semibold">tapCard</span>
+          <span className="text-4xl font-extrabold">tapcard</span>
         </div>
 
         {/* Desktop Links */}

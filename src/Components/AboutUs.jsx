@@ -3,40 +3,38 @@ import AboutUsImg from "../assets/TapCard website images/ab1.png";
 
 const AboutUs = () => {
   return (
-    <section className="w-full bg-[#202020] px-6 md:px-[100px] py-30">
-      <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
-        {/* Left - Image */}
-
-        {/* Right - Text */}
-        <div className="lg:w-1/2 space-y-6 text-white">
-          <h2 className="text-4xl md:text-5xl font-bold">
-            About{" "}
+    <section className="w-full bg-[#101010] px-6 md:px-20 py-24">
+      <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 max-w-7xl mx-auto">
+        {/* Left - Text */}
+        <div className="lg:w-1/2 text-white space-y-6 text-center lg:text-left">
+          <h2 className="text-4xl sm:text-5xl font-bold leading-tight">
+            Your digital identity,{" "}
             <span className="bg-gradient-to-r from-[#00BFFF] to-[#0080FF] bg-clip-text text-transparent">
-              TapCard
+              simplified.
             </span>
           </h2>
 
-          <p className="text-xl text-gray-200">
-            Your digital identity, simplified.
+          <p className="text-gray-300 text-lg leading-relaxed">
+            TapCard revolutionizes how you share your professional identity. We unify all your links—business profiles, social networks, and contact info—into one sleek QR code.
           </p>
 
-          <p className="text-lg text-gray-300 leading-relaxed">
-            TapCard revolutionizes how you share your professional identity. We
-            unify all your links—business profiles, social networks, and contact
-            info—into one sleek QR code.
+          <p className="text-gray-300 text-lg leading-relaxed">
+            Whether networking at events or connecting online, TapCard empowers you to share smarter and leave a lasting impression.
           </p>
 
-          <p className="text-lg text-gray-300 leading-relaxed">
-            Whether networking at events or connecting online, TapCard empowers
-            you to share smarter and leave a lasting impression.
-          </p>
-
-          <button className="mt-4 bg-gradient-to-r from-[#00BFFF] to-[#0080FF] text-white font-semibold py-3 px-8 rounded-full hover:shadow-blue-400/40 hover:shadow-lg transition-all duration-300">
+          <button className="mt-4 bg-gradient-to-r from-[#00BFFF] to-[#0080FF] text-white font-medium py-3 px-8 rounded-full shadow-md hover:shadow-blue-400/40 transition-all duration-300">
             Learn More
           </button>
         </div>
 
-        
+        {/* Right - Image */}
+        <div className="lg:w-1/2">
+          <img
+            src={AboutUsImg}
+            alt="About TapCard"
+            className="w-full h-auto rounded-xl shadow-lg"
+          />
+        </div>
       </div>
     </section>
   );
