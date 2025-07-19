@@ -5,3 +5,7 @@ body {
   /* font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif; */
   font-family: "Poppins", sans-serif;
 }
+
+::-webkit-scrollbar{
+  display: none;
+}
