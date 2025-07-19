@@ -14,8 +14,6 @@ const Navbar = () => {
       <div className="hidden md:flex items-center space-x-6 text-sm">
         <a href="#" className="hover:underline">Home</a>
         <a href="#" className="hover:underline">How it works</a>
-        <a href="#" className="hover:underline">Features</a>
-        <a href="#" className="hover:underline">FAQ</a>
         <button className="bg-[#00BFFF] text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-200">
           Download
         </button>

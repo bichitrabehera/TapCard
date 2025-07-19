@@ -1,5 +1,5 @@
 import React from "react";
-import AboutUsImg from "../assets/TapCard website images/aboutus1.png";
+import AboutUsImg from "../assets/TapCard website images/ab1.png";
 
 const AboutUs = () => {
   return (
