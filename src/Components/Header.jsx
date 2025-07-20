@@ -2,7 +2,6 @@ import React from "react";
 import qrImage from "../assets/TapCard website images/ab2.png";
 
 const Header = () => {
-  
   return (
     <header className="bg-gradient-to-r from-black via-gray-950 to-black w-full ">
       <div className="w-full px-6 md:px-[100px] py-50 h-[100vh] flex flex-col md:flex-row items-center md:items-center justify-between gap-10">
@@ -18,7 +17,7 @@ const Header = () => {
             From phone number to portfolio—share it all with a single QR.
           </p>
           <button className="bg-[#00608d] text-white px-6 py-3 rounded-full hover:bg-[#004c70] transition">
-            Create Your TapCard
+            <a href="/comingsoon"> Create Your TapCard</a>{" "}
           </button>
         </div>
 

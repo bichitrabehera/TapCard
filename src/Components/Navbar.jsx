@@ -94,7 +94,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full backdrop-blur-md bg-white/0 text-white py-6 px-6 md:px-[100px] flex justify-between items-center z-50 border-b border-white/10">
+      <nav className="fixed top-0 left-0 w-full backdrop-blur-md bg-black text-white py-6 px-6 md:px-[100px] flex justify-between items-center z-50 border-b border-white/10">
         {/* Logo */}
         <div className="flex items-center space-x-2 text-4xl font-extrabold">
           <span className="text-white">tapcard</span>
@@ -119,7 +119,11 @@ const Navbar = () => {
         {/* Mobile Hamburger */}
         <div className="md:hidden z-50">
           <button onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <IoClose size={28} /> : <IoMenu size={28} />}
+            {isOpen ? <IoClose size={28} /> : <div>
+              <div className="bg-white p-[1px] w-10 mb-2"></div>
+              <div className="bg-white p-[1px] w-5 mb-2"></div>
+              <div className="bg-white p-[1px] w-10 mt-2"></div>
+              </div>}
           </button>
         </div>
       </nav>
