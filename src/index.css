@@ -4,6 +4,7 @@
 body {
   /* font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif; */
   font-family: "Nunito Sans", sans-serif;
+  background-color: black;
 }
 
 /* ::-webkit-scrollbar {

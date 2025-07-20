@@ -1,15 +1,20 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./Layout";
 import Home from "./pages/Home";
 import HowItWorks from "./pages/HowItWorks";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import ComingSoon from "./Components/ComingSoon";
 
 const App = () => {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/howitworks" element={<HowItWorks />} />
-      </Routes>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/howitworks" element={<HowItWorks />} />
+          <Route path="/comingsoon" element={<ComingSoon />} />
+        </Routes>
+      </Layout>
     </Router>
   );
 };
