@@ -1,5 +1,5 @@
 import React from "react";
-import AboutUsImg from "../assets/TapCard website images/ab1.png";
+import AboutUsImg from "../assets/TapCard website images/about.jpg";
 
 const AboutUs = () => {
   return (
@@ -28,11 +28,11 @@ const AboutUs = () => {
         </div>
 
         {/* Right - Image */}
-        <div className="lg:w-1/2">
+        <div className="lg:w-1/2 justify-end flex">
           <img
             src={AboutUsImg}
             alt="About TapCard"
-            className="w-full h-auto rounded-xl shadow-lg"
+            className="h-[290px] rounded-xl shadow-lg "
           />
         </div>
       </div>
