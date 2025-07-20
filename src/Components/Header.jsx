@@ -1,9 +1,9 @@
 import React from "react";
-import qrImage from "../assets/TapCard website images/hero.png";
+import qrImage from "../assets/TapCard website images/ab2.png";
 
 const Header = () => {
   return (
-    <header className="bg-black">
+    <header className="bg-gradient-to-r from-black via-gray-900 to-black w-full h-screen">
       <div className="w-full px-6 md:px-[100px] py-20 h-[90vh] flex flex-col md:flex-row items-center md:items-center justify-between gap-10">
         
         {/* Text Content on full left */}
@@ -24,7 +24,7 @@ const Header = () => {
           <img
             src={qrImage}
             alt="QR Code with phone"
-            className="w-[250px] sm:w-[300px] md:w-[350px] p-10 object-contain"
+            className="w-[300px] sm:w-[400px] md:w-[500px] p-10 object-contain hover:scale-105 transition-transform duration-300"
           />
         </div>
       </div>
