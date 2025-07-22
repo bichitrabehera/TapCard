@@ -86,21 +86,122 @@
 
 // export default Navbar;
 
-import React, { useState } from "react";
-import { IoClose, IoMenu } from "react-icons/io5"; // clean icons
+
+
+// import React, { useState } from "react";
+// import { IoClose, IoMenu } from "react-icons/io5"; // clean icons
+
+// const Navbar = () => {
+//   const [isOpen, setIsOpen] = useState(false);
+
+//   return (
+//     <>
+//       <nav className="fixed top-0 left-0 w-full backdrop-blur-md bg-black text-white py-6 px-6 md:px-[100px] flex justify-between items-center z-50 border-b border-white/10">
+//         {/* Logo */}
+//         <div className="flex items-center space-x-2 text-4xl font-extrabold">
+//           <span className="text-white">tapcard</span>
+//         </div>
+
+//         {/* Desktop Nav (hidden on mobile) */}
+//         <div className="hidden md:flex items-center space-x-6 text-sm">
+//           <a href="/" className="hover:underline">
+//             Home
+//           </a>
+//           <a href="/howitworks" className="hover:underline">
+//             How it works
+//           </a>
+
+//           <button className="bg-[#00BFFF] text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-600">
+//             <a href="/comingsoon" className="hover:underline">
+//               Download
+//             </a>{" "}
+//           </button>
+//         </div>
+
+//         {/* Mobile Hamburger */}
+//         <div className="md:hidden z-50">
+//           <button onClick={() => setIsOpen(!isOpen)}>
+//             {isOpen ? <IoClose size={28} /> : <div>
+//               <div className="bg-white p-[1px] w-10 mb-2"></div>
+//               <div className="bg-white p-[1px] w-5 mb-2"></div>
+//               <div className="bg-white p-[1px] w-10 mt-2"></div>
+//               </div>}
+//           </button>
+//         </div>
+//       </nav>
+
+//       {/* Fullscreen Mobile Menu */}
+//       {isOpen && (
+//         <div className="fixed inset-0 bg-black text-white flex flex-col items-start px-6 pt-30 space-y-6 z-40">
+//           <a
+//             href="/"
+//             onClick={() => setIsOpen(false)}
+//             className="border-b border-gray-100 pb-2 w-full"
+//           >
+//             HOME
+//           </a>
+//           <a
+//             href="/howitworks"
+//             onClick={() => setIsOpen(false)}
+//             className="border-b border-gray-100 pb-2 w-full"
+//           >
+//             HOW IT WORKS
+//           </a>
+//           <a
+//             href="/comingsoon"
+//             onClick={() => setIsOpen(false)}
+//             className="border-b border-gray-100 pb-2 w-full"
+//           >
+//             DOWNLOAD
+//           </a>
+//         </div>
+//       )}
+//     </>
+//   );
+// };
+
+// export default Navbar;
+
+
+import React, { useState, useEffect } from "react";
+import { IoClose, IoMenu } from "react-icons/io5";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = () => {
+    if (typeof window !== "undefined") {
+      if (window.scrollY > lastScrollY) {
+        setShowNavbar(false); // scroll down = hide
+      } else {
+        setShowNavbar(true); // scroll up = show
+      }
+      setLastScrollY(window.scrollY);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", controlNavbar);
+    return () => {
+      window.removeEventListener("scroll", controlNavbar);
+    };
+  }, [lastScrollY]);
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full backdrop-blur-md bg-black text-white py-6 px-6 md:px-[100px] flex justify-between items-center z-50 border-b border-white/10">
+      <nav
+        className={`fixed top-0 left-0 w-full transition-transform duration-300 z-50 ${
+          showNavbar ? "translate-y-0" : "-translate-y-full"
+        } backdrop-blur-md bg-black text-white py-6 px-6 md:px-[100px] flex justify-between items-center border-b border-white/10`}
+      >
         {/* Logo */}
         <div className="flex items-center space-x-2 text-4xl font-extrabold">
           <span className="text-white">tapcard</span>
         </div>
 
-        {/* Desktop Nav (hidden on mobile) */}
+        {/* Desktop Nav */}
         <div className="hidden md:flex items-center space-x-6 text-sm">
           <a href="/" className="hover:underline">
             Home
@@ -108,29 +209,32 @@ const Navbar = () => {
           <a href="/howitworks" className="hover:underline">
             How it works
           </a>
-
           <button className="bg-[#00BFFF] text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-600">
             <a href="/comingsoon" className="hover:underline">
               Download
-            </a>{" "}
+            </a>
           </button>
         </div>
 
         {/* Mobile Hamburger */}
         <div className="md:hidden z-50">
           <button onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <IoClose size={28} /> : <div>
-              <div className="bg-white p-[1px] w-10 mb-2"></div>
-              <div className="bg-white p-[1px] w-5 mb-2"></div>
-              <div className="bg-white p-[1px] w-10 mt-2"></div>
-              </div>}
+            {isOpen ? (
+              <IoClose size={28} />
+            ) : (
+              <div>
+                <div className="bg-white p-[1px] w-10 mb-2"></div>
+                <div className="bg-white p-[1px] w-5 mb-2"></div>
+                <div className="bg-white p-[1px] w-10 mt-2"></div>
+              </div>
+            )}
           </button>
         </div>
       </nav>
 
-      {/* Fullscreen Mobile Menu */}
+      {/* Mobile Menu */}
       {isOpen && (
-        <div className="fixed inset-0 bg-black text-white flex flex-col items-start px-6 pt-30 space-y-6 z-40">
+        <div className="fixed inset-0 bg-black text-white flex flex-col items-start px-6 pt-28 space-y-6 z-40">
           <a
             href="/"
             onClick={() => setIsOpen(false)}
