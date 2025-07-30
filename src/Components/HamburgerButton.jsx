@@ -79,7 +79,7 @@ const StyledWrapper = styled.div`
 
   .menu__icon.open span:nth-child(3) {
     animation: ease .8s menu-icon-bottom forwards;
-    background-color: blue;
+    background-color: #006994;
   }
 
   @keyframes menu-icon-top {
