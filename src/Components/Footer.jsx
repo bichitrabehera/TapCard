@@ -4,20 +4,20 @@ import { FaInstagram, FaFacebook, FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer className="bg-black md:px-[100px] text-white px-8 py-20">
+      <div className="bg-gray-100 w-full h-[0.1px] mb-10"></div>
       <div className="mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
         {/* Logo + CTA */}
         <div className="flex flex-col items-start">
           <div className="flex items-center space-x-3 mb-4">
-            <h2 className="text-2xl font-bold">tapcard</h2>
+            <div className="flex items-center space-x-2 text-4xl font-light">
+              <span className="text-white">tapcard</span>
+            </div>
           </div>
           <p className="font-semibold">Create Your TapCard</p>
           <p className="text-gray-400 mb-4">Download the App now</p>
           <button className="bg-white text-black px-5 py-2 rounded-full hover:bg-gray-200 transition">
             Download
           </button>
-          <p className="text-gray-400 mt-10">
-            © 2025 tapcard | All rights reserved | Made with 🧡
-          </p>
         </div>
 
         {/* Sitemap */}
@@ -50,6 +50,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className="bg-gray-400 w-full h-[0.1px] mt-10"></div>
+
+      <p className="text-gray-400 mt-10">
+        © 2025 tapcard | All rights reserved | Made with 🧡
+      </p>
     </footer>
   );
 };

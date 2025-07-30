@@ -20,15 +20,16 @@ const features = [
 
 const WhyChooseTapCard = () => {
   return (
-    <section className="bg-[#0d0d0d] text-white px-6 py-24">
+    <section className="bg-[#0d0d0d] text-white px-6 py-30">
       <div className="max-w-6xl mx-auto">
         {/* Section Label + Heading */}
         <div className="mb-12 text-center">
           <p className="text-pink-500 text-sm font-medium uppercase tracking-widest mb-2">
             Key Highlights
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white">
-            Why Choose TapCard?
+          <h2 className="text-3xl md:text-4xl font-light text-white">
+            Why Choose{" "}
+            <span className="text-cyan-400 font-mono">TapCard?</span>
           </h2>
         </div>
 

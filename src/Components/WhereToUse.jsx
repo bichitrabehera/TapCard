@@ -36,15 +36,15 @@ const useCases = [
 ];
 
 const WhereToUse = () => (
-  <section className="bg-gradient-to-b from-black to-[#0f0f0f] text-white px-6 py-24">
+  <section className="bg-gradient-to-b from-black to-[#0f0f0f] text-white px-6 py-34">
     <div className="max-w-6xl mx-auto">
       {/* Header */}
       <div className="text-center mb-20">
         <p className="uppercase text-sm text-pink-500 tracking-wider mb-2">
           TapCard In Action
         </p>
-        <h2 className="text-3xl font-bold mb-4">
-          Where <span className="text-cyan-400">TapCard</span> Makes a Difference
+        <h2 className="text-3xl font-light mb-4">
+          Where <span className="text-cyan-400 font-medium font-mono">TapCard</span> Makes a Difference
         </h2>
         <p className="text-gray-400 text-lg max-w-3xl mx-auto">
           Whether it’s interviews, networking, or sharing your brand—TapCard is your go‑to identity tool.

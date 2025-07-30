@@ -34,14 +34,14 @@ const HowToUse = () => {
   ];
 
   return (
-    <section className="bg-[#0a0a0a] py-20 mt-20 px-6">
+    <section className="bg-[#0a0a0a] py-16 mt-20 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-20">
           <h2 className="text-sm font-medium text-gray-400 mb-4 tracking-widest">
             ELEGANT NETWORKING
           </h2>
-          <h1 className="text-4xl font-bold text-white mb-4">
+          <h1 className="text-4xl font-light text-white mb-4">
             Your Digital Presence,{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
               Simplified
@@ -57,7 +57,7 @@ const HowToUse = () => {
           {steps.map((step, index) => (
             <div
               key={index}
-              className={`p-6 rounded-xl bg-gray-900 border border-gray-800 hover:border-gray-700 transition-all duration-300 hover:shadow-xl ${step.ring} hover:ring-2`}
+              className={`p-6 rounded-xl bg-[#1f1f1f] border border-gray-800 hover:border-gray-700 transition-all duration-300 hover:shadow-xl ${step.ring} hover:ring-2`}
             >
               {/* Icon */}
               <div
@@ -68,7 +68,7 @@ const HowToUse = () => {
 
               {/* Text */}
               <div>
-                <h3 className="text-lg font-semibold text-white mb-2">
+                <h3 className="text-lg font-light text-white mb-2">
                   {step.title}
                 </h3>
                 <p className="text-gray-400 text-sm leading-relaxed">
@@ -81,10 +81,10 @@ const HowToUse = () => {
 
         {/* CTA */}
         <div className="text-center mt-20">
-          <button className="relative group inline-flex bg-cyan-600 hover:bg-blue-400 items-center justify-center px-8 py-3.5 overflow-hidden font-medium rounded-full">
+          <button className="relative group inline-flex bg-cyan-600 hover:bg-blue-400 items-center justify-center px-8 py-3.5 overflow-hidden font-medium rounded-xl">
             <a href="/comingsoon">
               {" "}
-              <p className="font-bold"> Get Started</p>{" "}
+              <p className="font-semibold"> Get Started</p>{" "}
             </a>{" "}
           </button>
         </div>

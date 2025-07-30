@@ -6,7 +6,7 @@ const ComingSoon = () => {
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-gray-900 to-black text-white p-6 text-center">
       {/* Main content */}
       <div className="max-w-md mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">
+        <h1 className="text-4xl md:text-5xl font-light mb-6">
           Coming <span className="text-blue-400">Soon</span>
         </h1>
 
