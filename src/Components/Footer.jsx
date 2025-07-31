@@ -3,8 +3,7 @@ import { FaInstagram, FaFacebook, FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-black md:px-[100px] text-white px-8 py-20">
-      <div className="bg-gray-100 w-full h-[0.1px] mb-10"></div>
+    <footer className="md:px-[100px] text-white px-8 py-20">
       <div className="mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
         {/* Logo + CTA */}
         <div className="flex flex-col items-start">

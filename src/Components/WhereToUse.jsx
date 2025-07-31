@@ -36,7 +36,7 @@ const useCases = [
 ];
 
 const WhereToUse = () => (
-  <section className="bg-gradient-to-b from-black to-[#0f0f0f] text-white px-6 py-34">
+  <section className="w-full text-white px-6 py-34">
     <div className="max-w-6xl mx-auto">
       {/* Header */}
       <div className="text-center mb-20">
@@ -56,7 +56,7 @@ const WhereToUse = () => (
         {useCases.map((item, idx) => (
           <div
             key={idx}
-            className="group w-full max-w-sm mx-auto bg-white/5 border border-white/10 rounded-xl p-5 sm:p-6 backdrop-blur-md hover:border-white/20 hover:shadow-cyan-500/10 transition-all duration-300"
+            className="group w-full max-w-sm mx-auto bg-[#1a1a1a] border border-white/10 rounded-xl p-5 sm:p-6 backdrop-blur-md hover:border-white/20 hover:shadow-cyan-500/10 transition-all duration-300"
           >
             <div className="w-12 h-12 mb-4 rounded-full bg-white/10 flex items-center justify-center text-xl">
               {item.icon}

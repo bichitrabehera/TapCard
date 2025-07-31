@@ -3,13 +3,14 @@ import AboutUsImg from "../assets/TapCard website images/about.jpg";
 
 const AboutUs = () => {
   return (
-    <section className="w-full bg-[#101010] px-6 md:px-20 py-24">
-      <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 max-w-7xl mx-auto">
+    <section className="relative w-full  px-6 md:px-20 py-24 overflow-hidden">
+      {/* Content */}
+      <div className="relative z-10 flex flex-col-reverse lg:flex-row items-center justify-between gap-12 max-w-7xl mx-auto">
         {/* Left - Text */}
         <div className="lg:w-1/2 text-white space-y-6 text-center lg:text-left">
           <h2 className="text-4xl sm:text-5xl font-light leading-tight">
             Your digital identity,{" "}
-            <span className="bg-gradient-to-r from-[#00BFFF] font-medium to-[#0080FF] bg-clip-text text-transparent">
+            <span className="bg-[#00BFFF] font-medium bg-clip-text text-transparent">
               simplified.
             </span>
           </h2>
@@ -32,7 +33,7 @@ const AboutUs = () => {
           <img
             src={AboutUsImg}
             alt="About TapCard"
-            className="h-[290px] rounded-xl shadow-lg "
+            className="h-[290px] rounded-xl shadow-lg"
           />
         </div>
       </div>

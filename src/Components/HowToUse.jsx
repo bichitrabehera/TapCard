@@ -34,7 +34,7 @@ const HowToUse = () => {
   ];
 
   return (
-    <section className="bg-[#0a0a0a] py-16 mt-20 px-6">
+    <section className="py-16 mt-20 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-20">

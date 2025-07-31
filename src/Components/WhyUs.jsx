@@ -20,7 +20,7 @@ const features = [
 
 const WhyChooseTapCard = () => {
   return (
-    <section className="bg-[#0d0d0d] text-white px-6 py-30">
+    <section className="w-full text-white px-6 py-30">
       <div className="max-w-6xl mx-auto">
         {/* Section Label + Heading */}
         <div className="mb-12 text-center">
