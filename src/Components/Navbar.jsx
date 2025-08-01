@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import HamburgerButton from "./HamburgerButton";
+import Button from "./PlayStore";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showNavbar, setShowNavbar] = useState(true);
@@ -28,7 +29,7 @@ const Navbar = () => {
       <nav
         className={`fixed top-0 left-0 w-full transition-transform duration-300 z-50 ${
           showNavbar ? "translate-y-0" : "-translate-y-full"
-        } backdrop-blur-md  text-white py-5 px-6 md:px-[100px] flex justify-between items-center`}
+        } backdrop-blur-[40px]  text-white py-5 px-6 md:px-[100px] flex justify-between items-center`}
       >
         {/* Logo */}
         <div className="flex items-center space-x-2 text-4xl font-light">
@@ -43,9 +44,9 @@ const Navbar = () => {
           <a href="/howitworks" className="hover:underline">
             How it works
           </a>
-          <button className="bg-[#00BFFF] text-black px-4 py-2 rounded-xl text-sm font-medium hover:bg-blue-600">
+          <button className="">
             <a href="/comingsoon" className="hover:underline">
-              Download
+              <Button />
             </a>
           </button>
         </div>

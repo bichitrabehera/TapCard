@@ -1,5 +1,6 @@
 import React from "react";
 import { FaInstagram, FaFacebook, FaXTwitter } from "react-icons/fa6";
+import Button from "./PlayStore";
 
 const Footer = () => {
   return (
@@ -12,11 +13,7 @@ const Footer = () => {
               <span className="text-white">tapcard</span>
             </div>
           </div>
-          <p className="font-semibold">Create Your TapCard</p>
-          <p className="text-gray-400 mb-4">Download the App now</p>
-          <button className="bg-white text-black px-5 py-2 rounded-full hover:bg-gray-200 transition">
-            Download
-          </button>
+          <Button/>
         </div>
 
         {/* Sitemap */}

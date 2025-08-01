@@ -56,7 +56,7 @@ const WhereToUse = () => (
         {useCases.map((item, idx) => (
           <div
             key={idx}
-            className="group w-full max-w-sm mx-auto bg-[#1a1a1a] border border-white/10 rounded-xl p-5 sm:p-6 backdrop-blur-md hover:border-white/20 hover:shadow-cyan-500/10 transition-all duration-300"
+            className="group w-full max-w-sm mx-auto bg-[#111111] border border-white/10 rounded-xl p-5 sm:p-6 backdrop-blur-md hover:border-white/20 hover:shadow-cyan-500/10 transition-all duration-300"
           >
             <div className="w-12 h-12 mb-4 rounded-full bg-white/10 flex items-center justify-center text-xl">
               {item.icon}
