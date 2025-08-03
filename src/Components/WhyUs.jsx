@@ -20,14 +20,14 @@ const features = [
 
 const WhyChooseTapCard = () => {
   return (
-    <section className="w-full text-white px-6 py-30">
+    <section className="w-full text-white px-6 py-30 bg-black">
       <div className="max-w-6xl mx-auto">
         {/* Section Label + Heading */}
         <div className="mb-12 text-center">
-          <p className="text-pink-500 text-sm font-medium uppercase tracking-widest mb-2">
+          <p className="text-pink-500 text-sm font-medium uppercase tracking-widest ">
             Key Highlights
           </p>
-          <h2 className="text-3xl md:text-4xl font-light text-white">
+          <h2 className="text-4xl md:text-5xl m-10 font-light text-white">
             Why Choose{" "}
             <span className="text-cyan-400 font-mono">TapCard?</span>
           </h2>

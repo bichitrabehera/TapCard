@@ -4,7 +4,7 @@ import Button from "./PlayStore";
 
 const Footer = () => {
   return (
-    <footer className="md:px-[100px] text-white px-8 py-20">
+    <footer className="md:px-[100px] text-white px-8 py-20 bg-black">
       <div className="mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
         {/* Logo + CTA */}
         <div className="flex flex-col items-start">

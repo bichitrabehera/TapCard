@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <section className=" text-white px-6 md:px-20 py-32">
+    <section className=" text-white px-6 md:px-20 py-32 bg-[#111111]">
       <div className="max-w-3xl mx-auto text-center space-y-8">
         <h2 className="text-4xl md:text-5xl font-light leading-tight tracking-tight">
           Your digital identity,{" "}
@@ -22,9 +22,9 @@ const AboutUs = () => {
           you to share smarter and leave a lasting impression.
         </p>
 
-        <button className="mt-6 bg-[#0080FF] text-white font-semibold py-3 px-8 rounded-xl ">
-          <a href="/comingsoon"> Learn More</a>
-        </button>
+        {/*<button className="mt-6 bg-[#0080FF] text-white font-semibold py-3 px-8 rounded-xl ">*/}
+        {/*  <a href="/comingsoon"> Learn More</a>*/}
+        {/*</button>*/}
       </div>
     </section>
   );

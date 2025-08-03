@@ -25,9 +25,8 @@ const StyledWrapper = styled.div`
 
   .background {
     border-radius: 10px;
-    border: 1px solid #1a1a1a;
     mix-blend-mode: luminosity;
-    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.20);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.20);
     backdrop-filter: blur(15px);
     width: 40px;
     height: 40px;

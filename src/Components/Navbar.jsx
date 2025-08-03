@@ -29,10 +29,10 @@ const Navbar = () => {
       <nav
         className={`fixed top-0 left-0 w-full transition-transform duration-300 z-50 ${
           showNavbar ? "translate-y-0" : "-translate-y-full"
-        } backdrop-blur-[40px]  text-white py-5 px-6 md:px-[100px] flex justify-between items-center`}
+        } backdrop-blur-[40px] bg-black  text-white py-5 px-6 md:px-[100px] flex justify-between items-center`}
       >
         {/* Logo */}
-        <div className="flex items-center space-x-2 text-4xl font-light">
+        <div className="flex items-center space-x-2 text-4xl font-semibold">
           <span className="text-white">tapcard</span>
         </div>
 
