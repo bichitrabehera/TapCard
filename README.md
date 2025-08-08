@@ -1,12 +1,14 @@
-# React + Vite
+# 📇 TapCard – Digital Identity, Reimagined
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TapCard is a **digital identity platform** that lets you share all your important links — business profiles, social media, portfolios, and contact details — through a **single dynamic QR code**.
 
-Currently, two official plugins are available:
+Whether you’re networking at events, attending interviews, or connecting online, TapCard makes it effortless to share your complete profile in seconds. Fully customizable and easy to update, your TapCard always represents you the way you want.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Key Features
+- **Unified QR Identity** – All your links in one scan.
+- **Customizable Design** – Match your personal or professional brand.
+- **Instant Updates** – Change links anytime without reprinting.
+- **Versatile Use** – Perfect for interviews, networking, creators, and client meetings.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 💡 Why TapCard?
+From a phone number to a full portfolio, TapCard keeps your professional identity **simple, smart, and fast to share**.
