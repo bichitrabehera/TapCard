@@ -59,7 +59,7 @@ const AboutPage = () => {
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-light">Our Mission</h2>
           <p className="text-gray-600 mt-4 max-w-3xl mx-auto">
-            We built TapCard to simplify connections. In a world full of noise,
+            We built Synapse to simplify connections. In a world full of noise,
             we believe networking should be as simple as a single scan.
           </p>
         </div>
