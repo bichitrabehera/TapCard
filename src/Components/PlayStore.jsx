@@ -27,7 +27,7 @@ const StyledWrapper = styled.div`
     align-items: center;
     justify-content: center;
     border: 1px solid #fff;
-    border-radius: 9999px;
+    border-radius: 0px;
     background-color: rgba(0, 0, 0, 1);
     padding: 0.25rem 0.875rem; /* reduced vertical padding */
     text-align: center;

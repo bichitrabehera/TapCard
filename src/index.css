@@ -7,6 +7,12 @@ body {
   background-color: black;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
+} */
+
+
+html {
+  font-size: 16px; /* base size for rem/em scaling */
+  -webkit-text-size-adjust: 100%; /* prevent iOS/Brave text scaling */
 }
