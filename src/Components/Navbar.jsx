@@ -35,11 +35,11 @@ const Navbar = () => {
       <nav
         className={`fixed top-0 left-0 w-full transition-transform duration-300 z-50 ${
           showNavbar ? "translate-y-0" : "-translate-y-full"
-        } backdrop-blur-xl bg-[#f1f1f1] border-b border-black text-black`}
+        } backdrop-blur-xl bg-[#ffffff] text-black`}
       >
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex justify-between items-center py-3">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex justify-between items-center py-2">
           {/* Logo */}
-          <h1 className="text-3xl font-extrabold">
+          <h1 className="text-2xl font-extrabold">
             Synapse
           </h1>
 
@@ -71,13 +71,13 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="fixed inset-0 bg-[#111111] text-white flex flex-col items-start px-6 pt-24 space-y-6 z-40 text-lg">
+        <div className="fixed inset-0 bg-[#000000] text-white flex flex-col items-start px-6 pt-24 space-y-6 z-40 text-lg">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.path}
               onClick={() => setIsOpen(false)}
-              className="w-full border-b border-cyan-600 pb-2"
+              className="w-full border-b border-black pb-2"
             >
               {link.name}
             </a>

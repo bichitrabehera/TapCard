@@ -52,7 +52,7 @@ const HowItWorksPage = () => {
               </span>
             </h1>
             <p className="text-gray-400 text-lg sm:text-xl mt-6">
-              From signup to sharing—see exactly how TapCard streamlines your
+              From signup to sharing—see exactly how Synapse streamlines your
               networking in four simple steps.
             </p>
           </div>
@@ -148,7 +148,7 @@ const HowItWorksPage = () => {
               Why It Works
             </h2>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-              TapCard removes friction from introductions and follow-ups so you
+              Synapse removes friction from introductions and follow-ups so you
               focus on the connection—not the tools.
             </p>
           </div>

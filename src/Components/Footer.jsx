@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Logo + CTA */}
           <div className="flex flex-col items-start">
             <div className="flex items-center space-x-3 mb-4">
-              <h1 className="text-4xl font-extrabold">Synapse</h1>
+              <h1 className="text-3xl font-extrabold">Synapse</h1>
             </div>
             <Button />
           </div>
@@ -23,7 +23,7 @@ const Footer = () => {
                 <li><a className="hover:text-cyan-600" href="/">Home</a></li>
                 <li><a className="hover:text-cyan-600" href="/howitworks">How It Works</a></li>
                 <li><a className="hover:text-cyan-600" href="/about">About the Team</a></li>
-                <li><a className="hover:text-cyan-600" href="/">Contact Us</a></li>
+                <li><a className="hover:text-cyan-600" href="/contact">Contact Us</a></li>
               </ul>
             </div>
 

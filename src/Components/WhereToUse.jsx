@@ -31,7 +31,7 @@ const useCases = [
 ];
 
 const WhereToUse = () => (
-    <section className="w-full text-black px-6 py-30 bg-[#f1f1f1]">
+    <section className="w-full text-black px-6 py-20 bg-[#f1f1f1]">
         <div className="max-w-6xl mx-auto">
             {/* Header */}
             <div className="text-center mb-20">
@@ -46,7 +46,7 @@ const WhereToUse = () => (
                     Makes a Difference
                 </h2>
                 <p className="text-gray-500 text-lg max-w-3xl mx-auto">
-                    Whether it’s interviews, networking, or sharing your brand—TapCard is your go-to identity tool.
+                    Whether it’s interviews, networking, or sharing your brand— Synapse is your go-to identity tool.
                 </p>
             </div>
 

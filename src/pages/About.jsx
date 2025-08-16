@@ -134,15 +134,17 @@ const AboutPage = () => {
             <li>
               <h3 className="text-xl font-semibold">2025 - September</h3>
               <p className="text-gray-400 mt-2">
-                Released first beta, onboarded 500+ early users, and refined the
-                product.
+                {/* Released first beta, onboarded 500+ early users, and refined the
+                product. */}{" "}
+                Coming Soon.
               </p>
             </li>
             <li>
               <h3 className="text-xl font-semibold">2025 - December</h3>
               <p className="text-gray-400 mt-2">
-                Expanded features, launched public version, and started global
-                roll-out.
+                {/* Expanded features, launched public version, and started global
+                roll-out. */}{" "}
+                Coming Soon.
               </p>
             </li>
           </ul>
