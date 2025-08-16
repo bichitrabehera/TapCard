@@ -2,7 +2,7 @@ import React from "react";
 
 const ComingSoon = () => {
   return (
-    <section className="bg-[#f1f1f1] text-black h-screen flex flex-col items-center justify-center px-6">
+    <section className="bg-[#f1f1f1] text-black h-[70vh] flex flex-col items-center justify-center px-6">
       {/* Logo / App Name */}
       <h1 className="text-4xl sm:text-5xl font-light mb-4">
         Something <span className="font-semibold text-cyan-500">Exciting</span>{" "}
@@ -31,7 +31,7 @@ const ComingSoon = () => {
         </div>
       </div>
 
-      <button className="bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2  transition-colors">
+      <button className="bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2">
         <a href="/">Back To Home</a>
       </button>
     </section>

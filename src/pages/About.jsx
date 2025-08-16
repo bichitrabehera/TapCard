@@ -66,7 +66,7 @@ const AboutPage = () => {
       </section>
 
       {/* Team */}
-      <section className="bg-white py-20 px-6">
+      <section className="bg-[#f1f1f1] py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-light text-center mb-16">
             Meet the Team
@@ -77,7 +77,7 @@ const AboutPage = () => {
                 <img
                   src={member.img}
                   alt={member.name}
-                  className="w-40 h-40 object-cover mx-auto border border-gray-200"
+                  className="w-40 h-40 object-cover mx-auto border border-[#111111]"
                 />
                 <h3 className="text-xl font-semibold mt-6">{member.name}</h3>
                 <p className="text-cyan-600 font-medium">{member.role}</p>
@@ -118,7 +118,7 @@ const AboutPage = () => {
       </section>
 
       {/* Story / Timeline */}
-      <section className="bg-black text-white py-20 sm:py-24 px-6">
+      <section className="bg-[#101010] text-white py-20 sm:py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-light text-center mb-16">
             Our Journey
@@ -150,7 +150,7 @@ const AboutPage = () => {
       </section>
 
       {/* CTA */}
-      <section className="bg-white text-black py-24 sm:py-28 px-6 text-center">
+      <section className="bg-[#f1f1f1] text-black py-24 sm:py-28 px-6 text-center">
         <h2 className="text-4xl sm:text-5xl font-light">
           Join Us On This Journey
         </h2>

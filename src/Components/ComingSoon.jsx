@@ -4,7 +4,7 @@ const ComingSoon = () => {
   return (
     <section className="bg-white text-black h-screen flex flex-col items-center justify-center px-6">
       {/* Logo / App Name */}
-      <h1 className="text-4xl sm:text-5xl font-light mb-4">
+      <h1 className="text-4xl sm:text-5xl font-light mb-4 text-center">
         Something <span className="font-semibold text-cyan-600">Exciting</span>{" "}
         is Coming
       </h1>
@@ -29,7 +29,7 @@ const ComingSoon = () => {
         </div>
       </div>
       {/* Notify Button */}
-      <button className="bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded-lg transition-colors">
+      <button className="bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 transition-colors">
         <a href="/">Back To Home</a>
       </button>
       

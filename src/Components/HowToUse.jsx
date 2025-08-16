@@ -24,22 +24,22 @@ const HowItWorksPreview = () => {
   ];
 
   return (
-    <section className="bg-black text-white py-16 px-6 sm:px-10">
+    <section className="bg-[#101010] text-white py-16 px-6 sm:px-10">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-sm font-medium text-gray-400 mb-2 tracking-widest">
             HOW IT WORKS
           </h2>
-          <h1 className="text-3xl sm:text-4xl font-light mb-3">
+          <h1 className="text-3xl sm:text-4xl font-light mb-3 p-5">
             Just 3 Simple Steps
           </h1>
         </div>
 
         {/* Steps */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center m-10">
           {steps.map((step, index) => (
-            <div key={index} className="flex flex-col items-center">
+            <div key={index} className="flex flex-col items-center bg-black py-10">
               <div
                 className={`w-12 h-12 flex items-center justify-center rounded-full ${step.color} mb-4`}
               >

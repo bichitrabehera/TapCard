@@ -35,10 +35,10 @@ const WhereToUse = () => (
         <div className="max-w-6xl mx-auto">
             {/* Header */}
             <div className="text-center mb-20">
-                <p className="uppercase text-lg text-cyan-600 tracking-wider mb-2">
-                    TapCard In Action
+                <p className="uppercase text-lg text-cyan-600 tracking-wider">
+                    Synapse In Action
                 </p>
-                <h2 className="text-4xl md:text-5xl font-light m-10">
+                <h2 className="text-4xl md:text-5xl font-light m-8">
                     Where{" "}
                     <span className="text-cyan-600 font-medium">
                         Synapse

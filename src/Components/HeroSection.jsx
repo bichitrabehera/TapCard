@@ -5,7 +5,7 @@ import Button from "./PlayStore";
 const Header = () => {
   return (
     <header className="bg-[#101010] text-white">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-12 py-15 lg:py-20 flex flex-col-reverse lg:flex-row items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-12 py-15 lg:py-10 flex flex-col-reverse lg:flex-row items-center justify-between">
         {/* Text */}
         <div className="w-full flex-1 lg:w-1/2 space-y-6 text-center lg:text-left">
           <h1 className="font-extrabold tracking-tight leading-tight text-3xl sm:text-6xl md:text-6xl">

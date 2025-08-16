@@ -40,7 +40,7 @@ const KeyFeatures = () => {
           <h2 className="text-sm font-medium text-gray-400 mb-3 tracking-widest">
             KEY FEATURES
           </h2>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight p-5">
             Why <span className="text-cyan-600">Synapse</span> Stands Out
           </h2>
           <p className="text-gray-600 mt-4 text-base sm:text-lg max-w-2xl mx-auto">

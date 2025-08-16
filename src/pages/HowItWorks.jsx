@@ -43,7 +43,7 @@ const HowItWorksPage = () => {
     <main className="w-full">
       {/* Hero */}
       <section className="bg-black text-white items-center flex">
-        <div className="max-w-7xl mx-auto px-6 sm:px-10 py-24 sm:py-28">
+        <div className="max-w-7xl mx-auto px-6 sm:px-10 py-24 sm:py-25">
           <div className="max-w-3xl text-center">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-light leading-tight">
               Your Digital Identity <br />
@@ -73,19 +73,18 @@ const HowItWorksPage = () => {
           </div>
 
           <div className="relative flex flex-col lg:flex-row items-start lg:items-center justify-between">
-            {/* Connector line on desktop */}
-            {/* <div className="hidden lg:block absolute top-8 left-0 right-0 h-px bg-gray-200" /> */}
-
             {steps.map((step, i) => (
               <div
                 key={i}
-                className="relative z-10 mb-12 lg:mb-0 flex-1 px-0 lg:px-4"
+                className="relative z-10 flex-1 px-6 py-8 m-4 bg-[#f9f9f9] shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className="w-16 h-16 border border-gray-200 flex items-center justify-center mb-6">
+                <div className="w-14 h-14 border border-gray-200 flex items-center justify-center mb-6 rounded-full bg-white">
                   <span className={`${step.color}`}>{step.icon}</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-3">{step.title}</h3>
-                <p className="text-gray-600 text-base leading-relaxed max-w-sm">
+                <h3 className="text-lg sm:text-xl font-semibold mb-3">
+                  {step.title}
+                </h3>
+                <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
                   {step.description}
                 </p>
               </div>
@@ -97,8 +96,8 @@ const HowItWorksPage = () => {
       {/* Side-by-side: App mockup / video + text */}
       {/* <section className="bg-[#f7f7f7] text-black">
         <div className="max-w-7xl mx-auto px-6 sm:px-10 py-20 sm:py-24 grid lg:grid-cols-2 gap-12 items-center"> */}
-          {/* Text block */}
-          {/* <div>
+      {/* Text block */}
+      {/* <div>
             <h2 className="text-3xl sm:text-4xl font-light">
               See It In Action
             </h2>
@@ -123,10 +122,10 @@ const HowItWorksPage = () => {
             </ul>
           </div> */}
 
-          {/* Media block (replace src with your demo video or screenshot) */}
-          {/* <div className="w-full">
+      {/* Media block (replace src with your demo video or screenshot) */}
+      {/* <div className="w-full">
             {/* If you have a video URL, swap the placeholder below with an iframe/video element */}
-            {/* <div className="relative aspect-[16/9] bg-white border border-gray-200 flex items-center justify-center">
+      {/* <div className="relative aspect-[16/9] bg-white border border-gray-200 flex items-center justify-center">
               <div className="text-center px-6">
                 <p className="text-sm text-gray-500">
                   App Preview / Video Placeholder
@@ -137,8 +136,8 @@ const HowItWorksPage = () => {
                 </p>
               </div>
             </div> */}
-          {/* </div>  */}
-        {/* // </div> */}
+      {/* </div>  */}
+      {/* // </div> */}
       {/* // </section> */}
 
       {/* Why It Works */}
