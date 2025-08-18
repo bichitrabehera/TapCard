@@ -126,6 +126,18 @@ function UserProfile() {
           </div>
         </div>
       )}
+
+      {/* Install App Button */}
+      <div className="w-full max-w-md mt-8">
+        <a
+          href="/comingsoon" // TODO: replace with your real app link
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block w-full text-center bg-blue-600 text-white font-semibold py-3 rounded-xl shadow hover:bg-blue-700 transition"
+        >
+          Install App
+        </a>
+      </div>
     </div>
   );
 }
