@@ -6,6 +6,7 @@ import HowItWorks from "./pages/HowItWorks";
 import ComingSoon from "./Components/ComingSoon";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import UserProfile from "./pages/UserProfile"; // 👈 import profile page
 
 const App = () => {
   return (
@@ -17,6 +18,9 @@ const App = () => {
           <Route path="/comingsoon" element={<ComingSoon />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+
+          {/* 👇 dynamic user profile route */}
+          <Route path="/u/:id" element={<UserProfile />} />
         </Routes>
       </Layout>
     </Router>
