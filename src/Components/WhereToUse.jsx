@@ -1,76 +1,73 @@
 import React from "react";
-import {
-    FaBriefcase,
-    FaUniversity,
-    FaPaintBrush,
-    FaShareAlt,
-    FaHandshake,
-} from "react-icons/fa";
+import { Briefcase, University, Share2, Handshake } from "lucide-react";
 
 const useCases = [
     {
-        icon: <FaBriefcase className="text-yellow-500" />,
+        icon: <Briefcase className="w-6 h-6 sm:w-7 sm:h-7" />,
         title: "Job Interviews",
-        description: "Impress recruiters with one tap to your full profile.",
+        description: "Impress recruiters instantly with one scan of your professional profile.",
     },
     {
-        icon: <FaUniversity className="text-blue-500" />,
+        icon: <University className="w-6 h-6 sm:w-7 sm:h-7" />,
         title: "Campus Networking",
-        description: "Quickly connect with peers, professors, and recruiters.",
+        description: "Connect with peers, professors, and clubs effortlessly.",
     },
     {
-        icon: <FaShareAlt className="text-green-500" />,
+        icon: <Share2 className="w-6 h-6 sm:w-7 sm:h-7" />,
         title: "Social Sharing",
-        description: "Share all your platforms instantly with new contacts.",
+        description: "Share all your social profiles in one tap — no app required.",
     },
     {
-        icon: <FaHandshake className="text-purple-500" />,
+        icon: <Handshake className="w-6 h-6 sm:w-7 sm:h-7" />,
         title: "Client Meetings",
-        description: "Professionally exchange contact details on the go.",
+        description: "Exchange contact info professionally in seconds.",
     },
 ];
 
-const WhereToUse = () => (
-    <section className="w-full text-black px-6 py-20 bg-[#f1f1f1]">
-        <div className="max-w-6xl mx-auto">
-            {/* Header */}
-            <div className="text-center mb-20">
-                <p className="uppercase text-lg text-cyan-600 tracking-wider">
-                    Synapse In Action
-                </p>
-                <h2 className="text-4xl md:text-5xl font-light m-8">
-                    Where{" "}
-                    <span className="text-cyan-600 font-medium">
-                        Synapse
-                    </span>{" "}
-                    Makes a Difference
-                </h2>
-                <p className="text-gray-500 text-lg max-w-3xl mx-auto">
-                    Whether it’s interviews, networking, or sharing your brand— Synapse is your go-to identity tool.
-                </p>
-            </div>
+const WhereToUse = () => {
+    return (
+        <section className="relative max-w-screen-2xl mx-auto text-white bg-black py-20 px-6 sm:py-28">
+            <div className="">
+                {/* Heading */}
+                <div className="text-left md:text-left mb-16 sm:mb-24">
+                    <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1]">
+                        where <span className="text-cyan-400 uppercase font-[Heading]">Synapse</span> makes a difference
+                    </h2>
+                    <p className="text-gray-400 mt-4 sm:mt-6 text-base sm:text-lg max-w-lg leading-relaxed mx-auto md:mx-0">
+                        Seamless connections for interviews, networking, social sharing, and client meetings — all in one tap.
+                    </p>
+                </div>
 
-            {/* Grid Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {useCases.map((item, idx) => (
-                    <div
-                        key={idx}
-                        className="group w-full max-w-sm mx-auto bg-white border border-gray-200 rounded p-5 sm:p-6 hover:border-black hover:shadow-lg transition-all duration-300"
-                    >
-                        <div className="w-12 h-12 mb-4 rounded-full bg-gray-100 flex items-center justify-center text-xl">
-                            {item.icon}
+                {/* Use Cases Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
+                    {useCases.map((item, index) => (
+                        <div
+                            key={index}
+                            className="group relative border border-[#2a2a2a] bg-gradient-to-b from-[#0a0a0a] to-[#101010]
+                         p-6 sm:p-8 md:p-10 hover:bg-[#0f0f0f] transition-all duration-300
+                         hover:border-cyan-500/40 hover:-translate-y-2 "
+                        >
+                            {/* Icon */}
+                            <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center mb-6 bg-[#111] border border-[#333] text-gray-300 group-hover:text-cyan-400 transition-colors rounded-md">
+                                {item.icon}
+                            </div>
+
+                            {/* Text */}
+                            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-3 tracking-wide uppercase group-hover:text-cyan-400 transition-colors">
+                                {item.title}
+                            </h3>
+                            <p className="text-gray-500 text-sm sm:text-base leading-relaxed">
+                                {item.description}
+                            </p>
+
+                            {/* Accent Line */}
+                            <div className="absolute bottom-0 left-0 w-0 h-[2px] bg-cyan-400 transition-all duration-300 group-hover:w-full"></div>
                         </div>
-                        <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-1">
-                            {item.title}
-                        </h3>
-                        <p className="text-sm text-gray-500 leading-relaxed">
-                            {item.description}
-                        </p>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
-        </div>
-    </section>
-);
+        </section>
+    );
+};
 
 export default WhereToUse;

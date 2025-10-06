@@ -26,10 +26,10 @@ const StyledWrapper = styled.div`
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #fff;
+    border: 1px solid #ffffff30;
     border-radius: 0px;
     background-color: rgba(0, 0, 0, 1);
-    padding: 0.25rem 0.875rem; /* reduced vertical padding */
+    padding: 0.8rem 0.875rem; /* reduced vertical padding */
     text-align: center;
     color: rgba(255, 255, 255, 1);
     outline: 0;

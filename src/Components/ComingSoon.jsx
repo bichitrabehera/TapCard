@@ -10,7 +10,7 @@ const ComingSoon = () => {
   });
 
   useEffect(() => {
-    const targetDate = new Date("2025-09-15T00:00:00"); // Set target date
+    const targetDate = new Date("2025-12-15T00:00:00"); // Set target date
 
     const interval = setInterval(() => {
       const now = new Date();
@@ -41,7 +41,7 @@ const ComingSoon = () => {
   }, []);
 
   return (
-    <section className="bg-[#f1f1f1] text-black h-[70vh] flex flex-col items-center justify-center px-6">
+    <section className="bg-[#f1f1f1] text-black h-screen flex flex-col items-center justify-center px-6">
       {/* Logo / App Name */}
       <h1 className="text-4xl sm:text-5xl font-light mb-4 text-center">
         Something <span className="font-semibold text-cyan-500">Exciting</span>{" "}

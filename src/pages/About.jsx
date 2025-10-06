@@ -1,5 +1,6 @@
 import React from "react";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import Navbar from "../Components/common/Navbar";
 
 const team = [
   {
@@ -41,73 +42,66 @@ const team = [
 
 const AboutPage = () => {
   return (
-    <main className="w-full">
-      {/* Hero */}
-      <section className="bg-black text-white py-24 sm:py-28 px-6">
-        <div className="max-w-4xl mx-auto text-center py-10">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-light">
+    <main className="bg-black text-white  flex flex-col">
+
+      <div className="py-10 md:py-20 min-h-screen">
+        {/* Navbar */}
+        <Navbar />
+
+        {/* Hero Section */}
+        <section className="flex flex-col max-w-5xl mx-auto items-center justify-center text-center py-32 px-6">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight">
             Our Story & The People Behind Synapse
           </h1>
-          <p className="text-gray-400 text-lg sm:text-xl mt-6">
-            From a small idea to a big mission—meet the team making it happen.
+          <p className="text-gray-400 text-lg md:text-xl mt-6 max-w-2xl">
+            From a small idea to a big mission – meet the team making it happen.
           </p>
-        </div>
-      </section>
+        </section>
+      </div>
 
-      {/* Mission */}
-      <section className="bg-white py-20 sm:py-24 px-6">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-light">Our Mission</h2>
-          <p className="text-gray-600 mt-4 max-w-3xl mx-auto">
+      {/* Mission Section */}
+      <section className="bg-[#0A0A0A] text-white py-24 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-6">Our Mission</h2>
+          <p className="text-gray-400 text-lg md:text-xl leading-relaxed">
             We built Synapse to simplify connections. In a world full of noise,
-            we believe networking should be as simple as a single scan.
+            networking should be as simple as a single scan.
           </p>
         </div>
       </section>
 
-      {/* Team */}
-      <section className="bg-[#f1f1f1] py-20 px-6">
+      {/* Team Section */}
+      <section className="bg-black text-white py-24 px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-light text-center mb-16">
-            Meet the Team
-          </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-12">
+          <h2 className="text-4xl font-bold text-center mb-16">Meet the Team</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-12">
             {team.map((member, idx) => (
-              <div key={idx} className="text-center">
+              <div
+                key={idx}
+                className="bg-[#030303] p-8 border border-[#ffffff40] shadow transition-transform transform hover:-translate-y-2"
+              >
                 <img
                   src={member.img}
                   alt={member.name}
-                  className="w-40 h-40 object-cover mx-auto border border-[#111111]"
+                  className="w-40 h-40 object-cover mx-auto border-1 border-cyan-500/60"
                 />
-                <h3 className="text-xl font-semibold mt-6">{member.name}</h3>
-                <p className="text-cyan-600 font-medium">{member.role}</p>
-                <p className="text-gray-600 text-sm mt-3">{member.bio}</p>
-                <div className="flex justify-center gap-4 mt-4 text-lg text-gray-500">
+                <h3 className="text-2xl font-bold mt-6">{member.name}</h3>
+                <p className="text-cyan-400 font-medium mt-1">{member.role}</p>
+                <p className="text-gray-400 text-sm mt-3 leading-relaxed">{member.bio}</p>
+                <div className="flex justify-center gap-6 mt-5 text-xl text-gray-400">
                   {member.socials.linkedin && (
-                    <a
-                      href={member.socials.linkedin}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <FaLinkedin className="hover:text-cyan-600" />
+                    <a href={member.socials.linkedin} target="_blank" rel="noreferrer">
+                      <FaLinkedin className="hover:text-cyan-400 transition-colors" />
                     </a>
                   )}
                   {member.socials.github && (
-                    <a
-                      href={member.socials.github}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <FaGithub className="hover:text-cyan-600" />
+                    <a href={member.socials.github} target="_blank" rel="noreferrer">
+                      <FaGithub className="hover:text-cyan-400 transition-colors" />
                     </a>
                   )}
                   {member.socials.instagram && (
-                    <a
-                      href={member.socials.instagram}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <FaInstagram className="hover:text-cyan-600" />
+                    <a href={member.socials.instagram} target="_blank" rel="noreferrer">
+                      <FaInstagram className="hover:text-cyan-400 transition-colors" />
                     </a>
                   )}
                 </div>
@@ -117,55 +111,26 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* Story / Timeline */}
-      <section className="bg-[#101010] text-white py-20 sm:py-24 px-6">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-light text-center mb-16">
-            Our Journey
-          </h2>
-          <ul className="space-y-8">
-            <li>
-              <h3 className="text-xl font-semibold">2025 - July</h3>
-              <p className="text-gray-400 mt-2">
-                Synapse was founded with the idea of replacing business cards
-                forever.
-              </p>
-            </li>
-            <li>
-              <h3 className="text-xl font-semibold">2025 - September</h3>
-              <p className="text-gray-400 mt-2">
-                {/* Released first beta, onboarded 500+ early users, and refined the
-                product. */}{" "}
-                Coming Soon.
-              </p>
-            </li>
-            <li>
-              <h3 className="text-xl font-semibold">2025 - December</h3>
-              <p className="text-gray-400 mt-2">
-                {/* Expanded features, launched public version, and started global
-                roll-out. */}{" "}
-                Coming Soon.
-              </p>
-            </li>
+      {/* Journey / Timeline Section */}
+      <section className="bg-[#0A0A0A] text-white py-24 px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-16">Our Journey</h2>
+          <ul className="space-y-12 border-l-2 border-cyan-500 pl-8">
+            {[
+              { date: "2025 - July", text: "Synapse was founded with the idea of replacing business cards forever." },
+              { date: "2025 - September", text: "Coming Soon." },
+              { date: "2025 - December", text: "Coming Soon." },
+            ].map((item, idx) => (
+              <li key={idx} className="relative">
+                <span className="absolute -left-4 top-3 w-2 h-2 bg-cyan-500 rounded-full"></span>
+                <h3 className="text-2xl font-semibold">{item.date}</h3>
+                <p className="text-gray-400 mt-2">{item.text}</p>
+              </li>
+            ))}
           </ul>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="bg-[#f1f1f1] text-black py-24 sm:py-28 px-6 text-center">
-        <h2 className="text-4xl sm:text-5xl font-light">
-          Join Us On This Journey
-        </h2>
-        <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-          TapCard is just getting started—be part of the future of networking.
-        </p>
-        <a
-          href="/contact"
-          className="inline-flex items-center justify-center mt-10 px-10 py-4 bg-cyan-600 hover:bg-blue-500 transition-colors duration-300 font-semibold text-white"
-        >
-          Contact Us
-        </a>
-      </section>
     </main>
   );
 };

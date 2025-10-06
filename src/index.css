@@ -1,18 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @import "tailwindcss";
 
 body {
-  /* font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif; */
-  font-family: "IBM Plex Sans", sans-serif;
-  background-color: black;
+  font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family: "", sans-serif; */
+  /* background-color: black; */
 }
 
 /* ::-webkit-scrollbar {
   display: none;
 } */
 
+::-webkit-scrollbar-button{
+  width: 4px;
+}
 
 html {
-  font-size: 16px; /* base size for rem/em scaling */
-  -webkit-text-size-adjust: 100%; /* prevent iOS/Brave text scaling */
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+
+@font-face {
+  font-family: "Heading";
+  src: url("./fonts/MozillaHeadline-SemiBold.bccc6c46c123.woff2");
+}
+
+@font-face {
+  font-family: "Font1";
+  src: url("./fonts/MozillaText-Regular.71c103450d6d.woff2");
+}
+
+
+.fontstylefooter{
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-size: 16px;
 }
