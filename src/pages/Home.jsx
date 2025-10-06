@@ -2,7 +2,7 @@ import React from "react";
 import KeyFeatures from "../Components/KeyFeatures";
 import HowItWorks from "../Components/sections/HowItWorks";
 import WhereToUse from "../Components/WhereToUse"
-import HeroWithNavbar from "../components/sections/HeroSection";
+import HeroWithNavbar from "../Components/sections/HeroWithNavbar";
 
 
 const Home = () => {
