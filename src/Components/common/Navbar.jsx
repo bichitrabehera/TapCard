@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import HamburgerButton from "./HamburgerButton";
-import Button from "./PlayStore";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +28,6 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            {/* <Button /> */}
           </div>
 
           <div className="md:hidden border p-2 border-[#ffffff60]">

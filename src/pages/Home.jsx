@@ -1,7 +1,6 @@
 import React from "react";
-import HeroSection from "../components/sections/HeroSection";
-import KeyFeatures from "../components/KeyFeatures";
-import HowItWorks from "../components/sections/HowItWorks";
+import KeyFeatures from "../Components/KeyFeatures";
+import HowItWorks from "../Components/sections/HowItWorks";
 import WhereToUse from "../Components/WhereToUse"
 import HeroWithNavbar from "../components/sections/HeroSection";
 

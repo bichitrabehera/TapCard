@@ -1,12 +1,3 @@
-/**
- * HowItWorksPage.jsx — refined and sharper version
- * Inspired by CRED’s design principles: more whitespace, bold typography, crisp edges.
- * - Steps: clean sharp cards with spacious layout
- * - Benefits: distinct accent stripes, consistent rhythm
- * - CTA: minimal but strong contrast
- */
-
-import React from "react";
 import { UserPlus, UserCog, QrCode, Share2, CheckCircle2 } from "lucide-react";
 
 const steps = [
