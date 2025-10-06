@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Button = () => {
+const Playstore = () => {
   return (
     <StyledWrapper>
       <a href="/comingsoon" className="playstore-button">
@@ -68,4 +68,4 @@ const StyledWrapper = styled.div`
   }
 `;
 
-export default Button;
+export default Playstore;

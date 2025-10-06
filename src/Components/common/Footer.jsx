@@ -1,6 +1,6 @@
 import React from "react";
 import { FaInstagram, FaFacebook, FaXTwitter } from "react-icons/fa6";
-import Button from "./PlayStore";
+import Playstore from "./PlayStore";
 
 const Footer = () => {
   return (
@@ -33,7 +33,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <div className="mt-6">
-                  <Button />
+                  <Playstore />
                 </div>
               </ul>
             </div>
