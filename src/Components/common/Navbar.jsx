@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import HamburgerButton from "./HamburgerButton";
+import Playstore from "./PlayStore";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -54,7 +55,7 @@ const Navbar = () => {
             {link.name}
           </a>
         ))}
-        <Button />
+        <Playstore />
       </div>
     </>
   );
